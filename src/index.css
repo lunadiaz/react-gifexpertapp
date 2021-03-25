@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
+body {
+  padding: 60px;
+}
+input{
+  color: gray;
+  width: 100%;
+  font-size: 1.3rem
+}
+.card{/*  el nombre de card se lo has puesto como nombre a className como si pones cualquier otro?? */
+  text-align: center;
+ /*  border-style:solid;
+  border-width: 1px;
+  border-color: grey;  */
+  border: 1px solid grey; /* este hace el borde dashed para q esté como en lineas */
+  border-radius: 6px; /* este te redondea la esquina */
+  overflow: hidden; /* este quita la barra de scroll */
+  padding: 16px;
+  margin: 16px;
+}
+/* esto es una clase inventada q pondré en el div.*/
+.card p{
+  padding: 1px;/* es para poner un espacio alrededor por dentro, el margin por fuera */
+  text-align: center;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.card img {
+  max-height: 100px; /*  Este tampoco hasce diferencia */
+  
+}
+.card-grid{ 
+  display: flex; /* este servirá para ponerlo como en cuadradito */
+  flex-direction: row; /* esta para ponerlo en linea */
+ flex-wrap:wrap /* es para q si no tiene espacio vaya como hacia abajo*/
 }
